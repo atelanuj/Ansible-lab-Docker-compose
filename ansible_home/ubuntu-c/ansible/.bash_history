@@ -200,3 +200,143 @@ ansible ubuntu1 -m setup
 ansible ubuntu1 -m setup | more
 ansible ubuntu1 -m setup | grep ipv4
 ansible ubuntu1 -m setup | grep ansible_default_ipv4
+ssh-keygen
+cd /root/.ssh
+sudo cd /root/.ssh
+cd /root/.ssh
+sudo su
+ansible -version
+ansible --version
+mkdir /etc/ansible/
+sudo mkdir /etc/ansible/
+cd /etc/ansible/
+vim ansible.cfg
+sudo su
+ls
+sudo su
+ansible all -m ping'
+ansible all -m ping
+ssh-copy-id ansible@ubuntu1
+PASSWORD=password
+for user in root ansible; do for os in ubuntu centos; do for instance in 1 2 3; do ssh-copy-id ${user}@${os}${instance}; done; done; done
+ansible all -m ping
+cd /home/ansible/
+ls
+cd diveintoansible/
+ls
+ls -l
+cd Ansible\ Playbooks\,\ Introduction/
+ls
+cd YAML/
+ls
+cd 18/
+./show_yaml_python.sh 
+cat test.yaml 
+cd ../19/
+./show_yaml_python.sh 
+cat test.yaml 
+./show_yaml_python.sh 
+mkdir /anuj
+sudo mkdir /anuj
+cd /anuj/
+vim test.yml
+cd /home/ansible/diveintoansible/Ansible\ Playbooks\,\ Introduction/YAML/
+ls
+cd 01/
+ls
+vim test.yaml 
+./show_yaml_python.sh 
+cat show_yaml_python.sh 
+ansible-inventory --graph
+ansible all -m ping
+cd /home/
+ls
+ls -la
+cd ansible/
+ls
+ls -la
+cd .ansible/
+ls
+ansible --version
+echo ANSIBLE_CONFIG
+echo $ANSIBLE_CONFIG
+export $ANSIBLE_CONFIG=/etc/ansible/ansible.cfg
+export ANSIBLE_CONFIG=/etc/ansible/ansible.cfg
+echo $ANSIBLE_CONFIG
+ansible --version
+ls
+cd /home/ansible/
+cd diveintoansible/
+cls -l
+ls -l
+cd Ansible\ Playbooks\,\ Introduction/
+ls
+ls -l
+cd Ansible Playbooks, Breakdown of Sections
+cd "Ansible Playbooks, Breakdown of Sections"
+ls
+cd 01
+ls
+cat motd_playbook.yaml 
+cd ../02
+ls
+cat motd_playbook.yaml 
+cat centos_motd 
+cat motd_playbook.yaml 
+cd ../03
+ls
+ansible --version
+cat ansible.cfg 
+ls
+cat motd_playbook.yaml 
+cd ../04
+ls
+cat motd_playbook.yaml 
+cd ../05
+ls
+cat motd_playbook.yaml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+vim test.yml
+ansible-playbook test.yml 
+ls
+cat motd_playbook.yaml 
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml 
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml 
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml 
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml 
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml 
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml -e 'name="aryan"'
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml -e 'namee="aryan"'
+vim motd_playbook.yaml 
+ansible-playbook motd_playbook.yaml -e 'namee="aryan"'
+vim motd_playbook.yaml 
+ansible all -m ping

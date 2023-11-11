@@ -11,12 +11,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1699292784,,"wq"
 :q
 |2,0,1698774602,,"q"
 :wq!
 |2,0,1698774077,,"wq!"
-:wq
-|2,0,1698604878,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -29,36 +29,160 @@
 # Registers:
 
 # File marks:
-'0  2  6  /etc/ansible/hosts
-|4,48,2,6,1698774603,"/etc/ansible/hosts"
-'1  2  6  /etc/ansible/hosts
-|4,49,2,6,1698774077,"/etc/ansible/hosts"
-'2  4  55  /etc/ansible/hosts
-|4,50,4,55,1698604878,"/etc/ansible/hosts"
-'3  4  55  /etc/ansible/hosts
-|4,51,4,55,1698604878,"/etc/ansible/hosts"
-'4  4  55  /etc/ansible/hosts
-|4,52,4,55,1698604878,"/etc/ansible/hosts"
-'5  4  55  /etc/ansible/hosts
-|4,53,4,55,1698604878,"/etc/ansible/hosts"
-'6  5  0  /etc/ansible/hosts
-|4,54,5,0,1698604823,"/etc/ansible/hosts"
-'7  5  0  /etc/ansible/hosts
-|4,55,5,0,1698604823,"/etc/ansible/hosts"
-'8  5  0  /etc/ansible/hosts
-|4,56,5,0,1698604823,"/etc/ansible/hosts"
-'9  5  0  /etc/ansible/hosts
-|4,57,5,0,1698604823,"/etc/ansible/hosts"
+'0  5  33  /etc/ansible/ansible.cfg
+|4,48,5,33,1699292784,"/etc/ansible/ansible.cfg"
+'1  6  24  /etc/ansible/ansible.cfg
+|4,49,6,24,1699292683,"/etc/ansible/ansible.cfg"
+'2  5  24  /etc/ansible/ansible.cfg
+|4,50,5,24,1699292683,"/etc/ansible/ansible.cfg"
+'3  12  6  /etc/ansible/hosts
+|4,51,12,6,1699292395,"/etc/ansible/hosts"
+'4  3  16  /etc/ansible/ansible.cfg
+|4,52,3,16,1699292340,"/etc/ansible/ansible.cfg"
+'5  3  16  /etc/ansible/ansible.cfg
+|4,53,3,16,1699292340,"/etc/ansible/ansible.cfg"
+'6  3  16  /etc/ansible/ansible.cfg
+|4,54,3,16,1699292340,"/etc/ansible/ansible.cfg"
+'7  3  16  /etc/ansible/ansible.cfg
+|4,55,3,16,1699292340,"/etc/ansible/ansible.cfg"
+'8  2  6  /etc/ansible/hosts
+|4,56,2,6,1698774603,"/etc/ansible/hosts"
+'9  2  6  /etc/ansible/hosts
+|4,57,2,6,1698774603,"/etc/ansible/hosts"
 
 # Jumplist (newest first):
+-'  5  33  /etc/ansible/ansible.cfg
+|4,39,5,33,1699292784,"/etc/ansible/ansible.cfg"
+-'  6  24  /etc/ansible/ansible.cfg
+|4,39,6,24,1699292761,"/etc/ansible/ansible.cfg"
+-'  5  24  /etc/ansible/ansible.cfg
+|4,39,5,24,1699292683,"/etc/ansible/ansible.cfg"
+-'  3  16  /etc/ansible/ansible.cfg
+|4,39,3,16,1699292435,"/etc/ansible/ansible.cfg"
+-'  3  16  /etc/ansible/ansible.cfg
+|4,39,3,16,1699292435,"/etc/ansible/ansible.cfg"
+-'  12  6  /etc/ansible/hosts
+|4,39,12,6,1699292395,"/etc/ansible/hosts"
+-'  12  6  /etc/ansible/hosts
+|4,39,12,6,1699292395,"/etc/ansible/hosts"
+-'  12  6  /etc/ansible/hosts
+|4,39,12,6,1699292395,"/etc/ansible/hosts"
+-'  12  6  /etc/ansible/hosts
+|4,39,12,6,1699292395,"/etc/ansible/hosts"
+-'  1  0  /etc/ansible/hosts
+|4,39,1,0,1699292344,"/etc/ansible/hosts"
+-'  1  0  /etc/ansible/hosts
+|4,39,1,0,1699292344,"/etc/ansible/hosts"
+-'  1  0  /etc/ansible/hosts
+|4,39,1,0,1699292344,"/etc/ansible/hosts"
+-'  1  0  /etc/ansible/hosts
+|4,39,1,0,1699292344,"/etc/ansible/hosts"
+-'  3  16  /etc/ansible/ansible.cfg
+|4,39,3,16,1699292340,"/etc/ansible/ansible.cfg"
+-'  3  16  /etc/ansible/ansible.cfg
+|4,39,3,16,1699292340,"/etc/ansible/ansible.cfg"
+-'  1  0  /etc/ansible/ansible.cfg
+|4,39,1,0,1699292324,"/etc/ansible/ansible.cfg"
+-'  1  0  /etc/ansible/ansible.cfg
+|4,39,1,0,1699292324,"/etc/ansible/ansible.cfg"
+-'  1  0  /etc/ansible/ansible.cfg
+|4,39,1,0,1699292324,"/etc/ansible/ansible.cfg"
+-'  1  0  /etc/ansible/ansible.cfg
+|4,39,1,0,1699292324,"/etc/ansible/ansible.cfg"
 -'  2  6  /etc/ansible/hosts
 |4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774603,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
+-'  2  6  /etc/ansible/hosts
+|4,39,2,6,1698774077,"/etc/ansible/hosts"
 -'  2  6  /etc/ansible/hosts
 |4,39,2,6,1698774077,"/etc/ansible/hosts"
 -'  4  55  /etc/ansible/hosts
 |4,39,4,55,1698774027,"/etc/ansible/hosts"
 -'  4  55  /etc/ansible/hosts
 |4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698774027,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
+-'  4  55  /etc/ansible/hosts
+|4,39,4,55,1698604878,"/etc/ansible/hosts"
 -'  4  55  /etc/ansible/hosts
 |4,39,4,55,1698604878,"/etc/ansible/hosts"
 -'  5  0  /etc/ansible/hosts
@@ -68,197 +192,87 @@
 -'  5  0  /etc/ansible/hosts
 |4,39,5,0,1698604837,"/etc/ansible/hosts"
 -'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604837,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
 |4,39,5,0,1698604823,"/etc/ansible/hosts"
--'  13  24  /etc/ansible/hosts
-|4,39,13,24,1698604781,"/etc/ansible/hosts"
--'  9  24  /etc/ansible/hosts
-|4,39,9,24,1698604781,"/etc/ansible/hosts"
--'  13  24  /etc/ansible/hosts
-|4,39,13,24,1698604781,"/etc/ansible/hosts"
--'  9  24  /etc/ansible/hosts
-|4,39,9,24,1698604781,"/etc/ansible/hosts"
--'  9  24  /etc/ansible/hosts
-|4,39,9,24,1698604781,"/etc/ansible/hosts"
--'  9  24  /etc/ansible/hosts
-|4,39,9,24,1698604770,"/etc/ansible/hosts"
--'  4  24  /etc/ansible/hosts
-|4,39,4,24,1698604754,"/etc/ansible/hosts"
--'  4  24  /etc/ansible/hosts
-|4,39,4,24,1698604754,"/etc/ansible/hosts"
--'  4  24  /etc/ansible/hosts
-|4,39,4,24,1698604716,"/etc/ansible/hosts"
--'  9  6  /etc/ansible/hosts
-|4,39,9,6,1698604684,"/etc/ansible/hosts"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  3  22  /etc/ansible/ansible.cfg
-|4,39,3,22,1698603736,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
--'  2  11  /etc/ansible/ansible.cfg
-|4,39,2,11,1698603706,"/etc/ansible/ansible.cfg"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604823,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604823,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604823,"/etc/ansible/hosts"
+-'  5  0  /etc/ansible/hosts
+|4,39,5,0,1698604823,"/etc/ansible/hosts"
 
 # History of marks within files (newest to oldest):
 
+> /etc/ansible/ansible.cfg
+	*	1699292781	0
+	"	5	33
+	^	5	34
+	.	5	33
+	+	1	10
+	+	4	0
+	+	2	17
+	+	3	22
+	+	1	10
+	+	3	17
+	+	6	24
+	+	5	33
+
 > /etc/ansible/hosts
-	*	1698774599	0
-	"	2	6
-	^	2	7
-	.	2	7
+	*	1699292393	0
+	"	12	6
+	^	12	7
+	.	12	6
 	+	13	6
 	+	2	24
 	+	3	24
@@ -277,13 +291,11 @@
 	+	4	7
 	+	3	7
 	+	2	7
-
-> /etc/ansible/ansible.cfg
-	*	1698603734	0
-	"	3	22
-	^	3	23
-	.	3	22
-	+	1	10
-	+	4	0
-	+	2	17
-	+	3	22
+	+	1	8
+	+	5	6
+	+	4	6
+	+	6	0
+	+	8	8
+	+	10	1
+	+	8	3
+	+	12	6
