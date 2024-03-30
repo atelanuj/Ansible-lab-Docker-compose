@@ -33,3 +33,22 @@ ansible all -a 'id'
 ansible all -a 'id' -o
 ansible all -a 'id' -o
 exit
+ls
+ansible
+docker
+ansible all -m ping
+cd /etc/ansible
+cd /etc
+ls
+ls -lrt
+ansible-lint
+pip
+pip install ansible-lint
+ls
+cd /home/
+ls
+cd ansible/
+ls
+cd /root/
+ls
+exit

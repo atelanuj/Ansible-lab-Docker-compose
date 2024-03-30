@@ -340,3 +340,15 @@ vim motd_playbook.yaml
 ansible-playbook motd_playbook.yaml -e 'namee="aryan"'
 vim motd_playbook.yaml 
 ansible all -m ping
+cd \
+ls
+pwd
+cd /root/
+ls
+pwd
+vim test.yml
+ansible-lint
+ansible-lint test.yml 
+ansible -m ping
+ansible all -m ping
+ls
