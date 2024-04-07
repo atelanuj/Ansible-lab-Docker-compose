@@ -1,3 +1,0 @@
-apt
-yum
-exit
