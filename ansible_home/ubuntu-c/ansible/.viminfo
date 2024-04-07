@@ -10,22 +10,17 @@
 
 # hlsearch on (H) or off (h):
 ~h
-# Last Substitute String:
-$
-
 # Command Line History (newest to oldest):
 :wq
-|2,0,1708197455,,"wq"
+|2,0,1712489555,,"wq"
 :q
-|2,0,1699550616,,"q"
-:wq!
-|2,0,1699294808,,"wq!"
+|2,0,1712489500,,"q"
+:w
+|2,0,1712479344,,"w"
 :q!
-|2,0,1699294760,,"q!"
+|2,0,1712478669,,"q!"
 
 # Search String History (newest to oldest):
-? @$
-|2,1,1698603238,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -35,371 +30,365 @@ $
 
 # Registers:
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1699550407,""
+	      when: services.{{item}}.state != 'running'
+|3,1,1,1,1,0,1712481670,"      when: services.{{item}}.state != 'running'"
 "2	LINE	0
-	  # Handlers: the list of handlers that are executed as a notify key from a task
-|3,0,2,1,1,0,1699550405,"  # Handlers: the list of handlers that are executed as a notify key from a task"
+	      loop: "{{ service_names }}"
+|3,0,2,1,1,0,1712481670,"      loop: \"{{ service_names }}\""
 "3	LINE	0
-	
-|3,0,3,1,1,0,1699550404,""
+	        state: started
+|3,0,3,1,1,0,1712481670,"        state: started"
 "4	LINE	0
-	  # Roles: list of roles to be imported into the play
-|3,0,4,1,1,0,1699550404,"  # Roles: list of roles to be imported into the play"
+	        name: "{{ item }}"
+|3,0,4,1,1,0,1712481670,"        name: \"{{ item }}\""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1699550403,""
+	      service:
+|3,0,5,1,1,0,1712481670,"      service:"
 "6	LINE	0
-	...
-|3,0,6,1,1,0,1699550403,"..."
+	    - name: Start the service if it is not running
+|3,0,6,1,1,0,1712481670,"    - name: Start the service if it is not running"
 "7	LINE	0
-	# Three dots indicate the end of a YAML document
-|3,0,7,1,1,0,1699550403,"# Three dots indicate the end of a YAML document"
-"8	LINE	0
 	
-|3,0,8,1,1,0,1699550399,""
+|3,0,7,1,1,0,1712481670,""
+"8	LINE	0
+	      label: "{{ item.services.nginx.state }}"
+|3,0,8,1,1,0,1712481670,"      label: \"{{ item.services.nginx.state }}\""
 "9	LINE	0
-	  # Hosts: where our play will run and options it will run with
-|3,0,9,1,1,0,1699550397,"  # Hosts: where our play will run and options it will run with"
+	      loop_control:
+|3,0,9,1,1,0,1712481670,"      loop_control:"
 
 # File marks:
-'0  41  50  ~/test.yml
-|4,48,41,50,1708197455,"~/test.yml"
-'1  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,49,1,0,1699550616,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'2  16  27  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,50,16,27,1699550561,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'3  16  27  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,51,16,27,1699550561,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'4  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,52,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'5  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,53,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'6  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,54,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'7  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,55,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'8  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,56,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
-'9  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,57,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
+'0  15  17  ~/hosts
+|4,48,15,17,1712489555,"~/hosts"
+'1  15  43  ~/hosts
+|4,49,15,43,1712489526,"~/hosts"
+'2  15  18  ~/hosts
+|4,50,15,18,1712489500,"~/hosts"
+'3  15  18  ~/hosts
+|4,51,15,18,1712489500,"~/hosts"
+'4  23  21  ~/nginx.yml
+|4,52,23,21,1712489407,"~/nginx.yml"
+'5  1  0  ~/nginx.yml
+|4,53,1,0,1712489235,"~/nginx.yml"
+'6  1  0  ~/nginx.yml
+|4,54,1,0,1712489235,"~/nginx.yml"
+'7  23  13  ~/nginx.yml
+|4,55,23,13,1712489186,"~/nginx.yml"
+'8  23  13  ~/nginx.yml
+|4,56,23,13,1712489186,"~/nginx.yml"
+'9  23  13  ~/nginx.yml
+|4,57,23,13,1712489186,"~/nginx.yml"
 
 # Jumplist (newest first):
--'  41  50  ~/test.yml
-|4,39,41,50,1708197455,"~/test.yml"
--'  1  0  ~/test.yml
-|4,39,1,0,1708197434,"~/test.yml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550616,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550616,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  27  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,27,1699550561,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  27  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,27,1699550561,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  27  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,27,1699550561,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  27  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,27,1699550561,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550552,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550552,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  12  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,12,8,1699550524,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550516,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550516,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  20  11  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,20,11,1699550455,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  6  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,6,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  6  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,6,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  6  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,6,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  16  6  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,16,6,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  17  5  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,17,5,1699550431,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550419,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550419,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  19  8  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,19,8,1699550410,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550372,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550372,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  24  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,24,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  37  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,37,1699550364,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550354,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550354,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  33  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,33,1699550345,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  23  33  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,23,33,1699550345,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550295,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550295,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  8  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,8,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  10  14  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,10,14,1699550280,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550261,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  1  0  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,1,0,1699550261,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  15  15  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,15,15,1699550247,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
--'  15  15  ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-|4,39,15,15,1699550247,"~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml"
+-'  15  17  ~/hosts
+|4,39,15,17,1712489555,"~/hosts"
+-'  1  0  ~/hosts
+|4,39,1,0,1712489545,"~/hosts"
+-'  15  43  ~/hosts
+|4,39,15,43,1712489526,"~/hosts"
+-'  1  0  ~/hosts
+|4,39,1,0,1712489509,"~/hosts"
+-'  15  18  ~/hosts
+|4,39,15,18,1712489500,"~/hosts"
+-'  1  0  ~/hosts
+|4,39,1,0,1712489489,"~/hosts"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  23  21  ~/nginx.yml
+|4,39,23,21,1712489407,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489360,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489235,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  23  13  ~/nginx.yml
+|4,39,23,13,1712489186,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  1  0  ~/nginx.yml
+|4,39,1,0,1712489120,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  19  0  ~/nginx.yml
+|4,39,19,0,1712487038,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
+-'  15  20  ~/nginx.yml
+|4,39,15,20,1712487015,"~/nginx.yml"
 
 # History of marks within files (newest to oldest):
 
-> ~/test.yml
-	*	1708197450	0
-	"	41	50
-	^	41	51
-	.	41	50
-	+	41	50
-
-> ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/motd_playbook.yaml
-	*	1699550615	0
-	"	1	0
-	^	16	28
-	.	16	27
-	+	7	9
-	+	8	10
-	+	12	14
-	+	21	0
-	+	16	26
-	+	15	18
-	+	8	8
-	+	7	11
-	+	8	14
-	+	20	37
-	+	14	0
-	+	11	0
-	+	7	0
-	+	21	0
-	+	15	2
-	+	15	0
-	+	19	6
-	+	12	8
-	+	16	27
-
-> ~/diveintoansible/Ansible Playbooks, Introduction/Ansible Playbooks, Breakdown of Sections/05/test.yml
-	*	1699550129	0
-	"	9	3
-	^	9	4
-	.	9	3
-	+	9	26
-	+	2	21
-	+	5	9
-	+	8	2
-	+	9	4
-	+	6	3
-	+	8	1
-	+	9	3
-	+	8	2
-	+	9	4
-	+	5	0
-	+	10	2
-	+	2	0
-	+	3	0
-	+	2	1
-	+	8	1
-	+	9	3
-	+	8	1
-	+	9	3
-
-> ~/diveintoansible/Ansible Playbooks, Introduction/YAML/01/test.yaml
-	*	1699294807	0
-	"	6	11
-	^	6	12
-	.	6	11
-	+	1	3
-	+	6	11
-
-> /anuj/test.yml
-	*	1699294759	0
-	"	1	2
-	^	6	12
-	.	6	11
-	+	6	11
-
-> /etc/ansible/ansible.cfg
-	*	1699292248	0
-	"	4	0
-	^	4	0
-	.	3	17
-	+	2	12
-	+	1	10
-	+	3	17
-
-> /etc/ansible/hosts
-	*	1698774017	0
-	"	2	6
-	^	2	7
-	.	2	7
+> ~/hosts
+	*	1712489555	0
+	"	15	17
+	^	15	18
+	.	15	18
 	+	1	8
+	+	6	6
 	+	2	7
 	+	4	6
-	+	3	6
-	+	10	8
-	+	13	6
-	+	5	0
-	+	6	13
-	+	8	27
-	+	4	7
-	+	3	7
-	+	2	7
+	+	9	7
+	+	11	13
+	+	14	10
+	+	15	18
 
-> ~/.ssh/auth.sh
-	*	1698576028	0
-	"	10	2
-	^	10	3
-	.	11	1
-	+	3	24
-	+	9	90
-	+	12	3
-	+	9	14
-	+	5	1
-	+	6	1
-	+	7	3
-	+	8	3
-	+	9	5
+> ~/nginx.yml
+	*	1712489406	0
+	"	23	21
+	^	23	22
+	.	18	20
+	+	9	8
+	+	23	22
+	+	2	37
+	+	3	14
+	+	23	21
+	+	3	15
+	+	11	9
+	+	23	21
+	+	8	20
+	+	24	29
+	+	22	21
+	+	12	25
+	+	12	0
+	+	19	0
+	+	15	25
+	+	18	20
+	+	17	22
+	+	8	13
+	+	13	20
+	+	18	20
+
+> ~/test.yml
+	*	1712486433	0
+	"	11	5
+	^	11	6
+	.	11	6
+	+	11	21
 	+	10	4
-	+	11	1
+	+	11	21
+	+	14	23
+	+	11	6
+
+> ~/sevice.yml
+	*	1712481673	0
+	"	27	47
+	^	27	48
+	.	27	47
+	+	1	49
+	+	1	25
+	+	1	0
+	+	1	32
+	+	1	3
+	+	1	36
+	+	1	7
+	+	1	38
+	+	1	35
+	+	1	48
+	+	1	30
+	+	1	0
+	+	1	29
+	+	1	35
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	10
+	+	1	4
+	+	1	0
+	+	1	47
+	+	1	3
+	+	1	0
+	+	1	3
+	+	1	45
+	+	1	3
+	+	1	47
+	+	1	3
+	+	27	47
+
+> ~/ansible.cfg
+	*	1712476369	0
+	"	137	23
+	^	137	24
+	.	137	23
+	+	1	11
+	+	137	23
+
+> ~/password.txt
+	*	1712475989	0
+	"	1	7
+	^	1	8
+	.	1	7
+	+	1	0
+	+	1	7
+
+> ~/script.sh
+	*	1712475943	0
+	"	11	3
+	^	11	4
+	.	11	3
+	+	2	0
+	+	11	3

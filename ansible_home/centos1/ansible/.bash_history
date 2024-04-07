@@ -1,1 +1,3 @@
+apt
+yum
 exit
